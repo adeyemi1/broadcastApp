@@ -31,8 +31,6 @@ a [Sails](http://sailsjs.org) application
     ii. To run the tests, navigate to the app root folder from the command line and 
     type: 'karma start sky.conf.js'
 
-10.Please you also call me on 07926117077, if you are having any trouble running this app. Cheers!
-
 
 
 
