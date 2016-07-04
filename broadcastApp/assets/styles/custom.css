@@ -1,0 +1,31 @@
+.jumbotron {
+text-align: center
+}
+
+footer{
+	background: #333;
+	color:#fff;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
+	margin-top:300px;
+}
+ 
+.productDiv{
+	border:1px solid grey;
+	margin-right: 10px;
+	width: 350px !important;
+	height:300px;
+}
+.checkoutBtn{
+	position: absolute;
+	top:250px;
+	left:120px;
+}
+.copyRight{
+	margin-top:-8px
+}
+.customerId{
+	width:auto;
+	margin-left: 480px;
+}

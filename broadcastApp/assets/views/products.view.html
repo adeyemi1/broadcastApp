@@ -1,0 +1,29 @@
+<h3>Select Products</h3>
+<div class="row" data-ng-controller="ProductsCtrl">
+	<div class="col-sm-6 col-md-4 productDiv" >
+		<h4>Sports</h4>
+		<div class="checkbox"  data-ng-repeat="sport in sports">
+			<label>
+				<input type="checkbox" ng-model="checked" data-ng-click="addRemoveFromBasket(checked,sport.name)">
+				{{sport.name}}
+			</label>
+		</div>
+	</div>
+	<div class="col-sm-6 col-md-4 productDiv">
+		<h4>News</h4>
+		<div class="checkbox"  data-ng-repeat="news in news">
+			<label>
+				<input type="checkbox" ng-model="checked" data-ng-click="addRemoveFromBasket(checked,news.name)">
+				{{news.name}}
+			</label>
+		</div>
+	</div>
+	<div class="col-sm-6 col-md-4 productDiv">
+		<h4>Basket</h4>
+		<ul>
+			<li data-ng-repeat="select in selections">{{select}}</li>
+		</ul>
+
+		<button data-ng-click="go('/confirmation')" ng-disabled="enableBtn()" class="checkoutBtn">Checkout</button>
+	</div>
+</div>

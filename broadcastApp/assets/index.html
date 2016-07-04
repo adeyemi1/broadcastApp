@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+		<title>Sky</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Bootstrap core CSS -->
+		<link href="../../styles/custom.css" rel="stylesheet">
+		<link href="../../styles/importer.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Sky</a>
+				</div>
+			</div>
+		</nav>
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h2>Great News!!</h2>
+				<p>We have new channels</p>
+				
+				<form >
+					<div class="form-group">
+						<label> Enter your customer Id</label>
+						<input id="customerId" type="text" placeholder="customer Id" class="form-control customerId">
+					</div>
+					<p onclick="setCookie()"><a class="btn btn-primary btn-lg" href="/products" role="button" >
+					See products  &raquo;</a></p>
+				</form>
+			</div>
+		</div>
+		
+		<hr>
+		<footer>
+			<h5 class="copyRight">&copy; 2016 Believe in better</h5>
+		</footer>
+		</div> <!-- /container -->
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		function setCookie() {
+			var value = document.getElementById("customerId").value,
+			expires,
+		d = new Date();
+		d.setTime(d.getTime() + (30*24*60*60*1000));
+		expires = "expires=" + d.toGMTString();
+		document.cookie = "customerId"+"="+value+"; "+expires;
+		}
+		</script>
+		
+	</body>
+</html>
